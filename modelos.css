@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.945);
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.texto{
+    background: #fff;
+    width: 240px;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.buscar{
+    position: relative;
+    border-radius: 0px 25px 25px 0;
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(49, 47, 47);
+    color: #fff;
+}
+
+.buscar:hover{
+    background: goldenrod;
+}
+
+.logo {
+    background-color: black;
+
+}
+
+header div img {
+    height: 125px;
+}
+
+.inputSearch {
+    margin: 0 auto;
+    background-color: black;
+}
+
+.inputNav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+header nav {
+    margin: 20px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 8px;
+    margin: 8px;
+    list-style: none;
+}
+
+header nav ul li a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+header nav ul li:hover {
+    background-color: rgb(49, 47, 47);
+    color: black;
+    border-radius: 15px;
+
+}
+
+header nav ul li:nth-last-child(2) {
+    background-color: rgb(49, 47, 47);
+    color: goldenrod;
+    border-radius: 15px;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6{
+    cursor: pointer;
+}
+
+.cards1{
+    perspective: 900px;
+    align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .container__column {
+                        /* Content is centered vertically */
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        /* Make all columns have the same width */
+                        flex: 1;
+
+                        /* OPTIONAL: Space between columns */
+                        margin: 0 8px;
+
+                        /* OPTIONAL: Border */
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                        border-radius: 4px;
+                    
+}
+
+.cards2{
+    perspective: 900px;
+    align-items: center;
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .container__column {
+                        /* Content is centered vertically */
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        /* Make all columns have the same width */
+                        flex: 1;
+
+                        /* OPTIONAL: Space between columns */
+                        margin: 0 8px;
+
+                        /* OPTIONAL: Border */
+                        border: 1px solid rgba(0, 0, 0, 0.3);
+                        border-radius: 4px;
+                    
+}
+
+.card1{
+    height: 350px;
+    width: 300px;
+    background: url(../Imagens/mclaren.webp);
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin: 50px;
+    
+}
+
+.card1:hover{
+    transform: translateZ(0px) rotateX(0deg) rotateY(5deg);
+}
+
+.card1-title{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card1:hover .card1-title{
+    transform: translateZ(25px);
+}
+
+.card2{
+    height: 350px;
+    width: 300px;
+    background: url(../Imagens/bugatti.webp);
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin: 50px;
+    
+}
+
+.card2:hover{
+    transform: translateZ(0px) rotateX(0deg) rotateY(5deg);
+}
+
+.card2-title{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card2:hover .card2-title{
+    transform: translateZ(25px);
+}
+
+.card3{
+    height: 350px;
+    width: 300px;
+    background: url(../Imagens/lamborghini.webp);
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin: 50px;
+    
+}
+
+.card3:hover{
+    transform: translateZ(0px) rotateX(0deg) rotateY(5deg);
+}
+
+.card3-title{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card3:hover .card3-title{
+    transform: translateZ(25px);
+}
+
+.card4{
+    height: 350px;
+    width: 300px;
+    background: url(../Imagens/lexus.webp);
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin: 50px;
+    
+}
+
+.card4:hover{
+    transform: translateZ(0px) rotateX(0deg) rotateY(5deg);
+}
+
+.card4-title{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card4:hover .card4-title{
+    transform: translateZ(25px);
+}
+
+.card5{
+    height: 350px;
+    width: 300px;
+    background: url(../Imagens/porsche.webp);
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin: 50px;
+    
+}
+
+.card5:hover{
+    transform: translateZ(0px) rotateX(0deg) rotateY(5deg);
+}
+
+.card5-title{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card5:hover .card5-title{
+    transform: translateZ(25px);
+}
+
+.card6{
+    height: 350px;
+    width: 300px;
+    background: url(../Imagens/mazda.webp);
+    background-size: cover;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .5s;
+    margin: 50px;
+    
+}
+
+.card6:hover{
+    transform: translateZ(0px) rotateX(0deg) rotateY(5deg);
+}
+
+.card6-title{
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+    top: 80%;
+    right: 25px;
+    transform: translateY(-50%);
+    transition: transform .5s;
+}
+
+.card6:hover .card6-title{
+    transform: translateZ(25px);
+}
+
+.link{
+    color: #1f6dff;
+    text-decoration: none;
+    position: static;
+}
+
+.link::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    font-size: 12px;
+    max-width: 250px;
+    margin-top: 8px;
+    padding: 6px;
+    background: #0d1117;
+    border-radius: 4px;
+    color: #cccfd3;
+    opacity: 0;
+    display: none;
+}
+
+.link:hover:before{
+    margin: -5px;
+    top: 150%;
+    opacity: 1;
+    display: inline;
+}
+
+
+.link i{
+    font-size: 1.7em;
+    transition: all 0.6s;
+    color: #f1f1f1;
+    background: #1c1a1c;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.link:hover i{
+    transform: rotate(-15deg);
+}
+
+.linkedin:hover{
+    color: #1da1f2;
+    transform: rotate(-15deg);
+}
+
+.instagram:hover{
+    color: #ad24ac;
+    transform: rotate(-15deg);
+}
+
+.twitter:hover{
+    color: #0a66c2;
+    transform: rotate(-15deg);
+}
+
+.link:nth-child(1)::before {
+    color: #ffffff;
+    background: #1da1f2;
+
+}
+
+.link:nth-child(2)::before {
+    color: #fff;
+    background: #ad24ac;
+}
+
+.link:nth-child(3)::before {
+    color: #fff;
+    background: #0a66c2;
+}
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}

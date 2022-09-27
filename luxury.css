@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:ital@0;1&family=Qwitcher+Grypen:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.945);
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+    font-family: sans-serif
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+.texto{
+    background: #fff;
+    width: 240px;
+    height: 35px;
+    border: none;
+    outline: none;
+    padding: 0 25px;
+    border-radius: 25px 0 0 25px;
+}
+
+.buscar{
+    position: relative;
+    border-radius: 0px 25px 25px 0;
+    width: 100px;
+    height: 35px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: rgb(49, 47, 47);
+    color: #fff;
+}
+
+.buscar:hover{
+    background: goldenrod;
+}
+
+.logo {
+    filter: drop-shadow(0 0 0.4rem) gold;
+
+}
+
+header div img {
+    height: 125px;
+}
+
+header .inputSearch {
+    margin: 0 auto;
+    background-color: black;
+}
+
+header .inputNav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+header nav {
+    margin: 20px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding: 8px;
+    margin: 8px;
+    list-style: none;
+    text-decoration: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: goldenrod;
+}
+
+header nav ul li:hover {
+    background-color: rgb(49, 47, 47);
+    color: goldenrod;
+    border-radius: 15px;
+
+}
+
+header nav ul li:nth-last-child(3) {
+    background-color: rgb(49, 47, 47);
+    color: goldenrod;
+    border-radius: 15px;
+}
+
+.recepcao{
+    background-image: url('../Imagens/recepcaoimage1.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    align-items: center;
+    transition: transform .75s;
+    outline: 1px solid;
+    font-family: sans-serif
+
+}
+
+.recepcao:hover{
+    transform: scale(1.05);
+}
+
+.text-cutout{
+    background-color:rgb(126, 126, 126);
+    mix-blend-mode: screen;
+    font-size: 100px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    border-radius: 5px;
+}
+
+.secao-bv{
+    display: flex;
+    justify-content: center;
+    font-size: 90%;
+}
+
+.bem-vindo{
+    size: cover;
+    color: #fff;
+    font-size: 300%;
+    height: 60px;
+    width: 58.5%;
+    margin: 8px;
+    animation: digitando 3s steps(50), blink .40s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid;
+    display: flex;
+    font-family: sans-serif
+}
+
+@keyframes digitando{
+    from{
+        width: 0;
+    }
+}
+
+@keyframes blink{
+    40%{
+        border-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.main-conteudo{
+    font-size: 170%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.principal {
+    color: #ffffff;
+    height: 250px;
+    width: 1300px;
+    margin: 30px;
+    padding: px;
+    font-family: 'Poppins', sans-serif;
+    
+    
+    /* Background */
+    background-color: #363e49;
+    background-position: -0.25rem -0.25rem;
+    background-repeat: repeat;
+    background-size: 0.5rem 0.5rem;
+
+    /* Spacing */
+    padding: 0.25rem;
+    display: flex;
+    justify-items: center;
+    filter: drop-shadow(1 0 0.4);
+}
+
+.conteudo-principal {
+
+    /* Background */
+    background-color: rgb(5, 5, 5);
+
+    height: 100%;
+    width: 100%;
+
+}
+
+.modelos{
+    color: #eca624;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.link{
+    color: #1f6dff;
+    text-decoration: none;
+    position: static;
+}
+
+.link::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    font-size: 12px;
+    max-width: 250px;
+    margin-top: 8px;
+    padding: 6px;
+    background: #0d1117;
+    border-radius: 4px;
+    color: #cccfd3;
+    opacity: 0;
+    display: none;
+}
+
+.link:hover:before{
+    margin: -5px;
+    top: 107%;
+    opacity: 1;
+    display: inline;
+}
+
+
+.link i{
+    font-size: 1.7em;
+    transition: all 0.6s;
+    color: #f1f1f1;
+    background: #1c1a1c;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+.link:hover i{
+    transform: rotate(-15deg);
+}
+
+.linkedin:hover{
+    color: #1da1f2;
+    transform: rotate(-15deg);
+}
+
+.instagram:hover{
+    color: #ad24ac;
+    transform: rotate(-15deg);
+}
+
+.twitter:hover{
+    color: #0a66c2;
+    transform: rotate(-15deg);
+}
+
+.link:nth-child(1)::before {
+    color: #ffffff;
+    background: #1da1f2;
+
+}
+
+.link:nth-child(2)::before {
+    color: #fff;
+    background: #ad24ac;
+}
+
+.link:nth-child(3)::before {
+    color: #fff;
+    background: #0a66c2;
+}
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
